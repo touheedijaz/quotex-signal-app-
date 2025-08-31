@@ -24,3 +24,7 @@
     "win": { "target": ["nsis"], "icon": "icon.png" }
   }
 }
+"scripts": {
+  "start": "electron .",
+  "package": "electron-packager . QuotexTradingApp --platform=win32 --arch=x64 --out=dist --overwrite"
+}
