@@ -1,0 +1,26 @@
+{
+  "name": "quotex-signal-app",
+  "version": "1.0.0",
+  "description": "Electron app: Quotex chart + Pro signal sidebar (EMA, RSI, ADX, patterns)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64",
+    "build-exe": "electron-builder --win --x64"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "electron-store": "^8.2.1"
+  },
+  "devDependencies": {
+    "electron": "^31.3.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.yourname.quotex-signal-sidebar",
+    "productName": "Quotex Signal Sidebar",
+    "files": ["**/*"],
+    "win": { "target": ["nsis"], "icon": "icon.png" }
+  }
+}
