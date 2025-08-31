@@ -24,11 +24,11 @@ jobs:
           npm install
           npm install --save-dev electron-packager
 
-      - name: Package Electron App for Windows
+      - name: Package Electron App
         run: |
           npx electron-packager . QuotexTradingApp --platform=win32 --arch=x64 --out=dist --overwrite
 
-      - name: Upload Windows Build Artifact
+      - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: Windows-App
